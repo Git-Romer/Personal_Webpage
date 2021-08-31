@@ -9,12 +9,3 @@ body {
     margin: 0;
     height: 100%;
 }
-
-.jsdisabled{
-    height: 100%;
-    align-content: center;
-}
-.jsdisabled img{
-    height: 20px;
-    width: 20px;
-}
