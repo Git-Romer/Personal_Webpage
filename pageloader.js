@@ -7,7 +7,6 @@ function loadPage(el, url, back = false) {
             value: url
         });
     }
-    console.log(el, url)
     var localTest = /^(?:file):/,
         xmlhttp = new XMLHttpRequest(),
         status = 0;
@@ -32,8 +31,8 @@ function loadPage(el, url, back = false) {
     } catch (err) {
         /* todo catch error */
     }
-    if (historydict.length > 60) {
-        historydict.splice(0, 30)
+    if (historydict.length > 120) {
+        historydict.splice(0, 60)
     }
 }
 
@@ -41,7 +40,9 @@ function gobackbutton() {
     if (historydict.length <= 2) {
         scroll(0, 0);
     } else {
-        loadPage(historydict[historydict.length - 2].key, historydict[historydict.length - 2].value, true);
+        loadPage(historydict[historydict.length - 3].key, historydict[historydict.length - 3].value, true);
+        loadPage(historydict[historydict.length - 4].key, historydict[historydict.length - 4].value, true);
+        historydict.pop();
         historydict.pop();
     }
 }
