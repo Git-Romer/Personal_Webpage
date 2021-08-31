@@ -111,7 +111,7 @@
   cursor: default;
 }
 
-.language{
+.lang{
   position: fixed;
   left: 40px;
   bottom: 40px;
@@ -119,7 +119,7 @@
   transition-duration: 200ms
 }
 
-.language:hover {
+.lang:hover {
   fill: white;
   transition-duration: 200ms
 }
