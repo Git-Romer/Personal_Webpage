@@ -110,3 +110,16 @@
   color: inherit;
   cursor: default;
 }
+
+.language{
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  fill: hsla(0, 0%, 100%, 0.7);
+  transition-duration: 200ms
+}
+
+.language:hover {
+  fill: white;
+  transition-duration: 200ms
+}

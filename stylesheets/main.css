@@ -54,21 +54,21 @@ img {
     max-width: 100%;
 }
 
-.likedinico{
+.likedinico {
     transition-duration: 200ms;
 }
 
-.likedinico:hover{
+.likedinico:hover {
     fill: #0e76a8;
     transition-duration: 200ms;
 }
 
-.twitterico{
+.twitterico {
     transition-duration: 200ms;
 }
 
-.twitterico:hover{
-    fill: #1DA1F2;    
+.twitterico:hover {
+    fill: #1DA1F2;
     transition-duration: 200ms;
 }
 
@@ -108,13 +108,14 @@ img {
 .header-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header-menu a {
-    padding: 20px 30px;
+    padding: 17.4px 30px;
     text-decoration: none;
     color: var(--inactive-color);
-    border-bottom: 2px solid transparent;
+    /* border-bottom: 2px solid transparent; */
     transition: 0.3s;
 }
 
@@ -160,19 +161,19 @@ img {
     flex-shrink: 0;
 }
 
-.menu-circle-red svg{
+.menu-circle-red svg {
     display: flex;
     align-items: center;
     margin: auto;
     height: 100%;
 }
 
-.menu-circle-red svg path{
+.menu-circle-red svg path {
     transition: all 400ms;
     opacity: 0;
 }
 
-.menu-circle-red svg:hover path{
+.menu-circle-red svg:hover path {
     transition: all 400ms;
     opacity: 1;
 }
@@ -186,19 +187,19 @@ img {
     flex-shrink: 0;
 }
 
-.menu-circle-orange svg{
+.menu-circle-orange svg {
     display: flex;
     align-items: center;
     margin: auto;
     height: 100%;
 }
 
-.menu-circle-orange svg path{
+.menu-circle-orange svg path {
     transition: all 400ms;
     opacity: 0;
 }
 
-.menu-circle-orange svg:hover path{
+.menu-circle-orange svg:hover path {
     transition: all 400ms;
     opacity: 1;
 }
@@ -212,19 +213,19 @@ img {
     flex-shrink: 0;
 }
 
-.menu-circle-green svg{
+.menu-circle-green svg {
     display: flex;
     align-items: center;
     margin: auto;
     height: 100%;
 }
 
-.menu-circle-green svg path{
+.menu-circle-green svg path {
     transition: all 400ms;
     opacity: 0;
 }
 
-.menu-circle-green svg:hover path{
+.menu-circle-green svg:hover path {
     transition: all 400ms;
     opacity: 1;
 }
@@ -335,13 +336,14 @@ img {
     font-size: 14px;
     border-radius: 6px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .side-menu a:hover {
     background-color: var(--hover-menu-bg);
 }
 
-.side-menu svg {
+.side-menu a svg {
     margin-right: 8px;
     height: 16px;
     width: 16px;
@@ -376,7 +378,11 @@ img {
 }
 
 .main-header .header-menu a {
-    padding: 20px 24px;
+    padding: 17px 24px;
+}
+
+.header-menu a svg {
+    display: block;
 }
 
 .main-container {
