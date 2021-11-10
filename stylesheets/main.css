@@ -25,7 +25,7 @@
 
 .maincontent {
     font-family: var(--body-font);
-    background-image: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg);
+    background-image: url(../pictures/fakurian-design-jkqGsgsE0RY-unsplash.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -413,7 +413,6 @@ img {
     height: 100%;
     overflow: auto;
     background-color: var(--theme-bg-color);
-    padding-bottom: 80px;
 }
 
 @media screen and (max-width: 510px) {
@@ -911,4 +910,10 @@ img {
 ::-webkit-scrollbar-thumb {
     background: var(--scrollbar-bg);
     border-radius: 10px;
+}
+
+#rightcontent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
