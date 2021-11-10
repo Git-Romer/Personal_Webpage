@@ -1,0 +1,118 @@
+<style>
+  #formparent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #form-content {
+    transition: 300ms;
+    width: 75%;
+    position: absolute;
+    z-index: 50;
+    text-align: center;
+    align-self: center;
+    background-color: var(--content-bg);
+    bottom: 0;
+  }
+
+  #formbutton-close {
+    display: none;
+  }
+
+  #form-head {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  #form-content form {
+    margin: 0 20px 20px 20px;
+  }
+
+  #form-content form * {
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px 0;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.405);
+    border: 0;
+    font-size: 16px;
+    color: white;
+    font: var(--body-font);
+  }
+
+  #form-content option {
+    background-color: var(--dropdown-bg);
+  }
+
+  #notbutton {
+    transition: 300ms;
+
+  }
+
+</style>
+<div class="content-wrapper">
+  <div id="formparent">
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <div id='form-content' class="contact-minimized">
+      <div id="notbutton">
+        <div id='form-head'>
+          <h1>Get in touch</h1>
+        </div>
+        <form method="POST" action="Personal_Webpage/pages/Personal-Information/Contact/contact-form-process.php">
+          <input placeholder='Your name please' type='text' name="Name" required>
+          <input placeholder='A contact email' type='email' name="Email" required>
+          <select name='Subject'>
+            <option style="font-style: italic;" disabled=''>What shall we talk about?</option>
+            <option selected=''>About a new project</option>
+            <option>About a job opportunity</option>
+            <option>Let's do this over a coffee</option>
+            <option>Other ...</option>
+          </select>
+          <textarea placeholder='How can I help?' style="height: 150px; resize: none;" name="Message"
+            required></textarea>
+          <input type='submit' value='Send Message'>
+        </form>
+      </div>
+      <div id="formbuttons">
+        <svg id="formbutton-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" onclick="closecontactform()">
+          <path
+            d="M18.363 8.464l1.433 1.431-12.67 12.669-7.125 1.436 1.439-7.127 12.665-12.668 1.431 1.431-12.255 12.224-.726 3.584 3.584-.723 12.224-12.257zm-.056-8.464l-2.815 2.817 5.691 5.692 2.817-2.821-5.693-5.688zm-12.318 18.718l11.313-11.316-.705-.707-11.313 11.314.705.709z" />
+        </svg>
+        <svg id="formbutton-close" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" onclick="closecontactform()">
+          <path
+            d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>

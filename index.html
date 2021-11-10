@@ -24,7 +24,11 @@
     <!-- Mainpage stylesheet -->
     <link rel="stylesheet" href="./stylesheets/main.css">
     <script type="text/javascript" src="./pageloader.js"></script>
-    <script>window.onload = loadPage('header-menu', './pages/Home/headermenu.html'), loadPage('rightcontent', './pages/Home/main.html')</script>
+    <!-- <script>window.onload = loadPage('header-menu', './pages/Home/headermenu.html'), loadPage('rightcontent', './pages/Home/main.html')</script> -->
+    <script>
+        window.onload = loadPage('header-menu', './pages/Personal-Information/Contact/headermenu.html'), loadPage(
+            'rightcontent', './pages/Personal-Information/Contact/main.html')
+    </script>
 </head>
 
 <body>
@@ -35,14 +39,6 @@
                 <div class="user-name">Gilles Alain Luc Romer</div>
                 <a class="login-button" href="#main">Login</a>
             </div>
-        </div>
-        <div class="lang">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                    <path
-                        d="M7.961 7.5h1.303l2.47 6.5h-1.349l-.538-1.5h-2.438l-.535 1.5h-1.392l2.479-6.5zm1.517 3.965l-.857-2.451-.851 2.451h1.708zm8.092-1.402c.062-.243.1-.426.135-.605l-1.1-.214-.109.5c-.371-.054-.767-.061-1.166-.021.009-.268.025-.531.049-.784h1.229v-1.042h-1.081c.054-.265.099-.424.144-.575l-1.074-.322c-.079.263-.145.521-.211.897h-1.226v1.042h1.092c-.028.337-.046.686-.051 1.038-1.207.443-1.719 1.288-1.719 2.054 0 .904.714 1.7 1.842 1.598 1.401-.128 2.337-1.186 2.885-2.487.567.327.805.876.591 1.385-.197.471-.78.919-1.892.896v1.121c1.234.019 2.448-.45 2.925-1.583.465-1.108-.066-2.318-1.263-2.898zm-1.446.766c-.175.387-.404.771-.697 1.075-.045-.323-.076-.676-.093-1.054.268-.035.537-.041.79-.021zm-1.894.362c.03.473.084.909.158 1.298-.997.183-1.037-.801-.158-1.298zm-2.23-8.191c5.514 0 10 3.592 10 8.007 0 4.917-5.145 7.961-9.91 7.961-1.937 0-3.384-.397-4.394-.644-1 .613-1.594 1.037-4.272 1.82.535-1.373.722-2.748.601-4.265-.837-1-2.025-2.4-2.025-4.872 0-4.415 4.486-8.007 10-8.007zm0-2c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 1.417.345 2.774.503 4.059.503 7.083 0 11.91-4.837 11.91-9.961-.001-5.811-5.702-10.006-12.001-10.006z" />
-                </svg>
-            </a>
         </div>
     </div>
     <div class="maincontent" id="main">
@@ -65,12 +61,16 @@
                     </svg>
                 </div>
                 <div class="header-menu">
-                    <a style="padding: 21.2px 26px; cursor: pointer;" class="menu-link" onclick="loadPage('header-menu', './pages/Home/headermenu.html'), loadPage('rightcontent', './pages/Home/main.html')"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="15" fill="currentcolor" height="15" viewBox="0 0 22 22">
-                            <path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" /></svg></a>
-                    <a style="padding: 21.2px 26px; cursor: pointer;" class="menu-link" onclick="gobackbutton()"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="15" fill="currentcolor" height="15" viewBox="0 0 26 26">
-                        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg></a>
+                    <a style="padding: 21.2px 26px; cursor: pointer;" class="menu-link"
+                        onclick="loadPage('header-menu', './pages/Home/headermenu.html'), loadPage('rightcontent', './pages/Home/main.html')"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="15" fill="currentcolor" height="15"
+                            viewBox="0 0 22 22">
+                            <path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
+                        </svg></a>
+                    <a style="padding: 21.2px 26px; cursor: pointer;" class="menu-link" onclick="gobackbutton()"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="15" fill="currentcolor" height="15"
+                            viewBox="0 0 26 26">
+                            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg></a>
                     <div id="header-menu"></div>
                 </div>
                 <div class="header-profile">
@@ -103,14 +103,16 @@
                     <div class="side-wrapper">
                         <div class="side-title">Personal information</div>
                         <div class="side-menu">
-                            <a onclick="loadPage('header-menu', './pages/Personal-Information/Education/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Education/main.html')">
+                            <a
+                                onclick="loadPage('header-menu', './pages/Personal-Information/Education/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Education/main.html')">
                                 <svg viewBox="0 -4 25 25" fill="currentColor">
                                     <path
                                         d="M24 21h-3l1-3h1l1 3zm-12.976-4.543l8.976-4.575v6.118c-1.007 2.041-5.607 3-8.5 3-3.175 0-7.389-.994-8.5-3v-6.614l8.024 5.071zm11.976.543h-1v-7.26l-10.923 5.568-11.077-7 12-5.308 11 6.231v7.769z" />
                                 </svg>
                                 Education
                             </a>
-                            <a onclick="loadPage('header-menu', './pages/Personal-Information/Work-Experience/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Work-Experience/main.html')">
+                            <a
+                                onclick="loadPage('header-menu', './pages/Personal-Information/Work-Experience/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Work-Experience/main.html')">
                                 <svg viewBox="0 -4 25 25" fill="currentColor">
                                     <path
                                         d="M13 2h2v2h1v19h1v-15l6 3v12h1v1h-24v-1h1v-11h7v11h1v-19h1v-2h2v-2h1v2zm8 21v-2h-2v2h2zm-15 0v-2h-3v2h3zm8 0v-2h-3v2h3zm-2-4v-13h-1v13h1zm9 0v-1h-2v1h2zm-18 0v-2h-1v2h1zm4 0v-2h-1v2h1zm-2 0v-2h-1v2h1zm9 0v-13h-1v13h1zm7-2v-1h-2v1h2zm-18-1v-2h-1v2h1zm2 0v-2h-1v2h1zm2 0v-2h-1v2h1zm14-1v-1h-2v1h2zm0-2.139v-1h-2v1h2z" />
@@ -118,14 +120,16 @@
                                 Work Experience
                                 <!-- <span class="notification-number updates">3</span> -->
                             </a>
-                            <a onclick="loadPage('header-menu', './pages/Personal-Information/Skills/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Skills/main.html')">
+                            <a
+                                onclick="loadPage('header-menu', './pages/Personal-Information/Skills/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Skills/main.html')">
                                 <svg viewBox="0 -2 25 25" fill="currentColor">
                                     <path
                                         d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
                                 </svg>
                                 Skills
                             </a>
-                            <a onclick="loadPage('header-menu', './pages/Personal-Information/Contact/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Contact/main.html')">
+                            <a
+                                onclick="loadPage('header-menu', './pages/Personal-Information/Contact/headermenu.html'), loadPage('rightcontent', './pages/Personal-Information/Contact/main.html')">
                                 <svg viewBox="0 -2 25 25" fill="currentColor">
                                     <path
                                         d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z" />
@@ -143,14 +147,16 @@
                     <div class="side-wrapper">
                         <div class="side-title">Regulatory</div>
                         <div class="side-menu">
-                            <a onclick="loadPage('header-menu', './pages/Regulatory/Legal-notice/headermenu.html'), loadPage('rightcontent', './pages/Regulatory/Legal-notice/main.html')">
+                            <a
+                                onclick="loadPage('header-menu', './pages/Regulatory/Legal-notice/headermenu.html'), loadPage('rightcontent', './pages/Regulatory/Legal-notice/main.html')">
                                 <svg viewBox="0 -4 25 25" fill="currentColor">
                                     <path
                                         d="M22.298 24h-5.469c-.182-2.287-1.893-4.311-3.43-5.941-.267-.283-.399-.611-.399-.908 0-.538.415-.979 1.105-.874.662.101 1.374.761 1.63 1.033v-5.175c0-.627.503-1.135 1.094-1.135.591 0 1.094.508 1.094 1.135v2.591c0 .454.445.513.502.059.118-.93 1.378-1.054 1.474.232.023.316.396.38.474.015.178-.837 1.367-.845 1.508.44.036.336.435.404.463.02.028-.388.155-.541.333-.541.6 0 1.262 1.17 1.262 2.557 0 2.492-1.641 2.498-1.641 6.492zm-9.798-21.586c2.933-1.617 7.169-2.282 11.5-2.414v13.644l-4.178-1.179c0-.145 0-.491-.014-.635-.14-1.419-1.295-2.698-2.979-2.73-1.729.048-2.866 1.303-2.991 2.882-.005.209-.003 2.166-.003 2.382-1.099 0-2.222.703-2.607 1.935-.21.678-.154 1.414.126 2.064.301.698.695 1.02 1.206 1.588-.636.113-1.295.032-1.893-.241-2.872-1.315-6.73-1.875-10.667-1.995v-17.715c4.331.132 8.568.797 11.5 2.414v10.586l1-.483v-10.103zm-9.5 10.317c2.086.312 4.451 1.024 6 1.673v-1.064c-1.668-.622-3.881-1.315-6-1.626v1.017zm0-2.031c2.086.312 4.451 1.023 6 1.672v-1.063c-1.668-.622-3.881-1.316-6-1.626v1.017zm0-2.031c2.086.311 4.451 1.023 6 1.673v-1.064c-1.668-.622-3.881-1.316-6-1.626v1.017zm0-2.031c2.086.311 4.451 1.023 6 1.672v-1.064c-1.668-.622-3.881-1.315-6-1.626v1.018zm18-1.018c-2.119.311-4.332 1.004-6 1.626v1.064c1.549-.649 3.914-1.361 6-1.672v-1.018zm-18-2.041c2.119.31 4.332 1.004 6 1.626v1.064c-1.549-.65-3.914-1.361-6-1.673v-1.017zm18 1.017c-2.086.312-4.451 1.023-6 1.673v-1.064c1.668-.622 3.881-1.316 6-1.626v1.017z" />
                                 </svg>
                                 Legal notice
                             </a>
-                            <a onclick="loadPage('header-menu', './pages/Regulatory/Privacy-policy/headermenu.html'), loadPage('rightcontent', './pages/Regulatory/Privacy-policy/main.html')">
+                            <a
+                                onclick="loadPage('header-menu', './pages/Regulatory/Privacy-policy/headermenu.html'), loadPage('rightcontent', './pages/Regulatory/Privacy-policy/main.html')">
                                 <svg viewBox="0 -1 25 25" fill="currentColor">
                                     <path
                                         d="M12 0c-3.436-.012-6.928 1.225-9 3v11.536c0 4.602 3.204 5.803 9 9.464 5.796-3.661 9-4.863 9-9.464v-11.536c-2.072-1.775-5.564-3.012-9-3z" />
@@ -180,11 +186,39 @@
                             </div>
                         </div>
                     </noscript>
-                    <div id="rightcontent" style="height: 100%;"></div>
+                    <div id="rightcontent"></div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="langchoose">
+        <div class="lang">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                    <path
+                        d="M7.961 7.5h1.303l2.47 6.5h-1.349l-.538-1.5h-2.438l-.535 1.5h-1.392l2.479-6.5zm1.517 3.965l-.857-2.451-.851 2.451h1.708zm8.092-1.402c.062-.243.1-.426.135-.605l-1.1-.214-.109.5c-.371-.054-.767-.061-1.166-.021.009-.268.025-.531.049-.784h1.229v-1.042h-1.081c.054-.265.099-.424.144-.575l-1.074-.322c-.079.263-.145.521-.211.897h-1.226v1.042h1.092c-.028.337-.046.686-.051 1.038-1.207.443-1.719 1.288-1.719 2.054 0 .904.714 1.7 1.842 1.598 1.401-.128 2.337-1.186 2.885-2.487.567.327.805.876.591 1.385-.197.471-.78.919-1.892.896v1.121c1.234.019 2.448-.45 2.925-1.583.465-1.108-.066-2.318-1.263-2.898zm-1.446.766c-.175.387-.404.771-.697 1.075-.045-.323-.076-.676-.093-1.054.268-.035.537-.041.79-.021zm-1.894.362c.03.473.084.909.158 1.298-.997.183-1.037-.801-.158-1.298zm-2.23-8.191c5.514 0 10 3.592 10 8.007 0 4.917-5.145 7.961-9.91 7.961-1.937 0-3.384-.397-4.394-.644-1 .613-1.594 1.037-4.272 1.82.535-1.373.722-2.748.601-4.265-.837-1-2.025-2.4-2.025-4.872 0-4.415 4.486-8.007 10-8.007zm0-2c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 1.417.345 2.774.503 4.059.503 7.083 0 11.91-4.837 11.91-9.961-.001-5.811-5.702-10.006-12.001-10.006z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <script>
+        function closecontactform() {
+            const element = document.getElementById("form-content");
+            if (element.classList.contains("contact-minimized")) {
+                element.classList.remove("contact-minimized");
+                document.getElementById("formbutton-close").style.display = "inline";
+                document.getElementById("formbutton-open").style.display = "none";
+                document.getElementById("notbutton").style.height = "550px"
+                element.style.width = "75%"
+            } else {
+                element.classList.add("contact-minimized");
+                document.getElementById("formbutton-open").style.display = "inline";
+                document.getElementById("formbutton-close").style.display = "none";
+                document.getElementById("notbutton").style.height = "1px"
+                element.style.width = "0"
+            }
+        }
+    </script>
 </body>
 
 </html>
